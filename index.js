@@ -30,7 +30,7 @@
 // checkNumber(6) ;
 
 // // 2 //
-// Thuật toán nổi bọt => so sánh 2 số rồi đổi chỗ cho nhau
+// // Thuật toán nổi bọt => so sánh 2 số rồi đổi chỗ cho nhau
 // const arr=[10, 2,3,2,5]
 // function bubbleSortIncrease(arr){
 //   let len = arr.length;
@@ -58,8 +58,8 @@
 // console.log(bubleSortDecrease(arr))
 
 // 3//
-// Đảo ngược chuỗi
-// Tách chuỗi -> đảo ngược mảng -> gộp mảng
+// // Đảo ngược chuỗi
+// // Tách chuỗi -> đảo ngược mảng -> gộp mảng
 //   let rawStr = "Hello CY VietNam";
 // function reverseString(str){
 //   let arr = str.split("");
@@ -68,11 +68,11 @@
 // }
 // console.log(reverseString(rawStr));
 
-// 4 //
-// Kiểm tra dấu '@' và '.'
-// Không được ở đầu và cuối
-// Không được có khoảng trắng
-// Check sau dấu @ '@' và '.'
+// // 4 //
+// // Kiểm tra dấu '@' và '.'
+// // Không được ở đầu và cuối
+// // Không được có khoảng trắng
+// // Check sau dấu @ '@' và '.'
 
 // function validateEmail(email) {
 //   const atIndex = email.indexOf("@");
@@ -108,9 +108,9 @@
 // console.log(validateEmail(email4));
 
 // 5 //
-// Loại bỏ các ký tự đặc biệt -> replace
-// Xử lý không xuất hiện nhiều hơn 2 dấu space
-// ko xuất hiện space ở đầu và cuối
+// // Loại bỏ các ký tự đặc biệt -> replace
+// // Xử lý không xuất hiện nhiều hơn 2 dấu space
+// // ko xuất hiện space ở đầu và cuối
 // // 
 // function stringClean(input){
 //   const string = input.replace(/[@#!{}[\]()]/g, '')
@@ -130,7 +130,7 @@
 //   if(string===''){
 //     return []
 //   }
-//   // Chia chuỗi thành mảng
+//   // Chia chuỗi thành mảng các từ
 //   let arrWord = string.split(' ')
 //   // Viết hoa chữ cái đầu và đảo ngược
 //   let capitalizedWords = arrWord.map(word => upercaseString(word)).reverse();
@@ -191,15 +191,15 @@ let arr = [
 ]
 function mergeByBrand(arr) {
   let groupedByBrand = {};
-
+// Cho mảng vào object 
   arr.forEach(e => {
+    // Giống thêm, khác tạo mới
       if (groupedByBrand[e.brand]) {
           groupedByBrand[e.brand].push(e);
       } else {
           groupedByBrand[e.brand] = [e];
       }
   });
-
   return Object.values(groupedByBrand);
 }
 
