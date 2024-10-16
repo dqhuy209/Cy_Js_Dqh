@@ -14,7 +14,6 @@ function removeLastChild() {
 
 // Bai 3
 const ulNode3 = document.querySelector("#bai3");
-
 const arr = [...ulNode3.children];
 function resever() {
   arr.reverse().forEach((element) => {
